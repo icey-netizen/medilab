@@ -5,7 +5,7 @@ from healthapp import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.home, name='home'),
+    path('home/', views.home, name='home'),
     path('starter/', views.starter, name='starter'),
     path('about/', views.about, name='about'),
     path('appointment/', views.appointment, name='appointment'),
@@ -23,7 +23,7 @@ urlpatterns = [
 
 
 
-    path('register/', views.register, name='register'),
+    path('', views.register, name='register'),
     path('login/', views.login_user, name='login'),
 
 ]
